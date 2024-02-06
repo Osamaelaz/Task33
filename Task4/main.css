@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dfdbe5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.facebook {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 74%;
+    margin: auto 14%;
+    height: 100vh;
+}
+
+.facebook .text {
+    margin-top: -10%;
+    width: 46%;
+}
+@media (max-width:890px){
+    .facebook{
+        display: block;
+        width: 100%;
+        margin: 30px 20px;
+    }
+    .facebook .text{
+        width: 100%;
+        margin-top: 10%;
+        padding: 10px;
+    }
+    .facebook .text p{
+        max-width: 100%;
+        margin-right: 10px;
+    }
+}
+.text h1 {
+    color: rgb(7, 102, 255, 1);
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-size: 23px;
+    max-width: 100%;
+}
+
+form {
+    width: 335px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid rgb(0,0, 0, 0.2);
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+@media(max-width:890px){
+    form{
+        margin: 40px 12px; 
+    }
+}
+.input-box,
+.login {
+    width: 100%;
+    height: 50%;
+    margin-top: 10px;
+}
+
+.input-box input,
+.login input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: 2px solid rgb(0, 0, 0, 0.1);
+    padding: 13px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.1);
+    caret-color: #eee;
+}
+
+input::placeholder {
+    color: #777;
+    font-size: 14px;
+}
+
+.login input {
+    text-align: center;
+    background-color: rgb(7, 102, 255, 1);
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: rgb(7, 102, 255, 1);
+    font-size: 15px;
+    text-decoration: none;
+    padding: 10px 5px;
+    position: relative;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #777;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    opacity: 0.3;
+}
+
+.create {
+    width: 100%;
+    height: 35px;
+}
+
+.create input {
+    width: 60%;
+    height: 100%;
+    margin: 0 20%;
+    border: none;
+    outline: none;
+    background-color: #43b72a;
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 8px;
+    cursor: pointer;
+}
